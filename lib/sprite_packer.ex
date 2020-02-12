@@ -18,8 +18,6 @@ defmodule SpritePacker do
     |> pack_by_algorithm(algorithm, atlas_size)
     |> filter_only_fit
     |> Generator.generate_spriteatlas(dest_dir)
-
-    # |> confirm_result(dest_dir)
   end
 
   defp pack_by_algorithm(block_list, algorithm_type, atlas_size)
